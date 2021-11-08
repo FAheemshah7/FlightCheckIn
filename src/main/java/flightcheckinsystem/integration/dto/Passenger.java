@@ -1,21 +1,15 @@
 package flightcheckinsystem.integration.dto;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
 
-@Entity
-@Table(name="tPassenger")
-public class Passenger extends AbstractEntity{
+public class Passenger{
 
-	
-	@Column(name="fName")
+	private int id;
 	private String f_name;
-	@Column(name="lName")
+
 	private String l_name;
-	@Column(name="email")
+
 	private String email;
-	@Column(name="phone")
+
 	private String phone;
 
 	public String getF_name() {
@@ -41,6 +35,12 @@ public class Passenger extends AbstractEntity{
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 

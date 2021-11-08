@@ -1,6 +1,6 @@
  package flightcheckinsystem.integration;
 
-public interface ReservationRsetClient {
+public interface ReservationRestClient {
 	
 	public Reservation findReservation(int id );
 	public Reservation updateResrvation(int id );

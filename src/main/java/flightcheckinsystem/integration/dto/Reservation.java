@@ -1,19 +1,13 @@
 package flightcheckinsystem.integration.dto;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
 
-
-@Entity
-@Table(name="tReservation")
-public class Reservation extends AbstractEntity {
+public class Reservation {
 	
 	private Boolean CHECKED_IN;
 	private int NUMBER_OF_BAGS;
-	@OneToOne
+
 	private Passenger passenger;
-	@OneToOne
+
 	private Flight flight;
 	
 	
