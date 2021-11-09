@@ -3,6 +3,7 @@ package flightcheckinsystem.integration.dto;
 
 public class Reservation {
 	
+	private int id;
 	private Boolean CHECKED_IN;
 	private int NUMBER_OF_BAGS;
 
@@ -35,6 +36,12 @@ public class Reservation {
 	}
 	public void setFlight(Flight flight) {
 		this.flight = flight;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}	
 
 }
