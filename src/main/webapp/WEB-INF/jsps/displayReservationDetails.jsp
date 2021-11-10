@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2> Flight Details</h2>
-Airlines :${reservation.flight}<br>
+Airlines :${reservation.flight.operAirline}<br>
 Flight # :${reservation.flight.fNumber}<br>
 Departure City :${reservation.flight.dCity}<br>
 Arrival City :${reservation.flight.arCity}<br>
@@ -22,9 +22,9 @@ Email	   :${reservation.passenger.email}<br>
 Phone #	   :${reservation.passenger.phone}<br>
 
 <form action="completeCheckIn" method="post">
-Enter The Number of Bags You want to CheckIn:<input type="text" name=NUMBER_OF_BAGS/>
-<input type="hidden" value="${reservation.id}"/>
-<input type="submit" value="Check In"/>
+Enter The Number of Bags You want to CheckIn:<input type="text" name="NUMBER_OF_BAGS"/>
+<input type="hidden" value="${reservation.id}" name="reservationId"/>
+<input type="submit" value="Check in"/>
 
 </form>
 </body>
