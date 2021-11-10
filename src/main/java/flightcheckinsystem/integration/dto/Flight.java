@@ -26,6 +26,13 @@ public class Flight {
 		this.id = id;
 	}
 
+	@Override
+	public String toString() {
+		return "Flight [id=" + id + ", fNumber=" + fNumber + ", operAirline=" + operAirline + ", dCity=" + dCity
+				+ ", arCity=" + arCity + ", dateOfDeparture=" + dateOfDeparture + ", estimedDepartureTime="
+				+ estimedDepartureTime + "]";
+	}
+
 	public String getfNumber() {
 		return fNumber;
 	}

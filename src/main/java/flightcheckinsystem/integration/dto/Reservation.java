@@ -11,7 +11,7 @@ public class Reservation {
 
 	private Flight flight;
 	
-	
+
 
 	public Boolean getCHECKED_IN() {
 		return CHECKED_IN;

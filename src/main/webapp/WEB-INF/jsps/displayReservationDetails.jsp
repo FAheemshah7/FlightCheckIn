@@ -8,18 +8,18 @@
 </head>
 <body>
 <h2> Flight Details</h2>
-Airlines :${reservation.flight}
-Flight # :${reservation.flight.fNumber}
-Departure City :${reservation.flight.dCity}
-Arrival City :${reservation.flight.arCity}
-Date of Departure :${reservation.flight.dateOfDeparture}
-Estimated Arrival Time :${reservation.flight.estimedDepartureTime}
+Airlines :${reservation.flight}<br>
+Flight # :${reservation.flight.fNumber}<br>
+Departure City :${reservation.flight.dCity}<br>
+Arrival City :${reservation.flight.arCity}<br>
+Date of Departure :${reservation.flight.dateOfDeparture}<br>
+Estimated Arrival Time :${reservation.flight.estimedDepartureTime}<br>
 
 <h2>Passengers Details </h2>
-First Name :${reservation.f_name}
-Last Name  :${reservation.l_name}
-Email	   :${reservation.email}
-Phone #	   :${reservation.phone}
+First Name :${reservation.passenger.f_name}<br>
+Last Name  :${reservation.passenger.l_name}<br>
+Email	   :${reservation.passenger.email}<br>
+Phone #	   :${reservation.passenger.phone}<br>
 
 <form action="completeCheckIn" method="post">
 Enter The Number of Bags You want to CheckIn:<input type="text" name=NUMBER_OF_BAGS/>
