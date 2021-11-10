@@ -5,12 +5,7 @@ package flightcheckinsystem.integration.dto;
 public class Passenger{
 
 	private int id;
-	
-	@Override
-	public String toString() {
-		return "Passenger [id=" + id + ", f_name=" + f_name + ", l_name=" + l_name + ", email=" + email + ", phone="
-				+ phone + "]";
-	}
+
 	private String f_name;
 
 	private String l_name;
